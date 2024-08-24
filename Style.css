@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    font-size: 62.5%;
+
+    --bg-linear: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
+    --bg-dark: #2D2A37;
+    --gray: #6B6B6B;
+    --white: #EBEBEB;
+}
+
+body
+{
+    width: 100vw;
+    height: 100dvh;
+
+    display: grid;
+    place-content: center;
+
+    background: var(--bg-linear);
+    font-size: 1.6rem;
+}
+
+body, button
+{
+    font-family: "Rubik", sans-serif;
+}
+
+input
+{
+    background: none;
+    border: none;
+}
+
+#app
+{
+    width: 356px;
+    padding: 5.4rem 3.2rem 3.2rem;
+    background-color: var(--bg-dark);
+    border-radius: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 120px 48px 0px rgba(0, 0, 0, 0.04), 0px 68px 41px 0px rgba(0, 0, 0, 0.15), 0px 30px 30px 0px rgba(0, 0, 0, 0.26), 0px 8px 17px 0px rgba(0, 0, 0, 0.29), inset 0px 6px 8px 0px rgba(255, 255, 255, 0.10), inset 0px -4px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+.Display
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    gap: .8rem;
+}
+
+.Display input
+{   
+    text-align: end;
+}
+
+.Display > input
+{
+    font-size: 2rem;
+    line-height: 140%;
+    color: var(--gray);
+    letter-spacing: -0.4px;
+}
+
+.Results
+{
+    display: flex;
+    align-items: center;
+}
+
+.Results input
+{
+    width: 100%;
+    color: var(--white);
+    font-size: 3.6rem;
+    line-height: 140%;
+}
+
+.Keyboard
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.Row
+{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+button
+{
+    width: 6.4rem;
+    color: var(--white);
+    height: 6.4rem;
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 999px;
+    display: grid;
+    place-content: center;
+    box-shadow: 0px 11px 7px 0px rgba(0, 0, 0, 0.01), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 0px 2px 0px rgba(0, 0, 0, 0.29), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.10);
+    cursor: pointer;
+    letter-spacing: -0.72px;
+    transition: filter 0.5s;
+}
+
+button:hover
+{
+    filter: brightness(1.2);
+}
+
+button svg
+{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.Row button
+{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+}
+
+.Row button:last-child
+{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+}
+
+.Row:last-child button:last-child
+{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+}
